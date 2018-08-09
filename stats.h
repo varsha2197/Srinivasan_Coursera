@@ -94,11 +94,12 @@ int find_mean(unsigned char *,  unsigned int);
  * dataset.
  *     
  * This function inputs an unsigned char array as a pointer and the length
- * of the array and sorts array in ascending order.
+ * of the array.
+ * Then computes median as follows:-
  * Median= (20th element + 21st element)/2.  
  * The function finally returns the median value.
  *               
- * @param *T the array to be displayed
+ * @param *t the array to be displayed
  * @param size the length of the array 
  * @return the median value of the array.
  */
@@ -117,7 +118,7 @@ int find_median(unsigned char *,  unsigned int);
  * the array. Similarly after all the iterations are over, the array would
  * have been successfully sorted in descending order.
  *                     
- * @param *T the array to be sorted
+ * @param *test the array to be sorted
  * @param size the length of the array
    @return nothing
  */
@@ -129,13 +130,13 @@ void sort_array(unsigned char *, const unsigned int);
  * mean, and median
  *       
  * The function prints the statistics like maximum, minimum, mean and 
- * median of the unsorted array. It uses globally declared variables
- * and hence doesn't need any input.
+ * median of the unsorted array.It takes in minimum, maximum , mean and median
+ * as inputs and prints the values.
  *           
- * @param none
+ * @param a,b,c,d are the inputs
  * @return none
  */
-void print_statistics();
+void print_statistics(int, int, int, int);
 
 
 #endif /* __STATS_H__ */
